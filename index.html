@@ -1,15 +1,21 @@
 <head>
+  <meta charset="UTF-8">
   <title>N.C. Press Assocation Usability Report</title>
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" />
 <link rel="stylesheet" href="https://cdn.rawgit.com/afeld/bootstrap-toc/v0.4.1/dist/bootstrap-toc.min.css" />
 <link rel="stylesheet" href="style.css" type="text/css" />
 
+
+
 <script
   src="https://code.jquery.com/jquery-2.2.4.min.js"
   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
   crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.4.3/showdown.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
 <script src="https://cdn.rawgit.com/afeld/bootstrap-toc/v0.4.1/dist/bootstrap-toc.min.js"></script>
 
 
@@ -21,31 +27,66 @@
         <!-- sidebar, which will move to the top on a small screen -->
         <div class="col-sm-3">
           <nav id="toc" data-spy="affix" data-toggle="toc">
-            <ul class="nav">
-              <!-- <li><a href="#lister">Lister</a></li> -->
-            </ul>
           </nav>
         </div>
         <!-- main content area -->
         <div class="col-sm-9">
-          <h1 id="lister">Lister</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ullamcorper porta congue. Sed malesuada rutrum pellentesque. Duis laoreet ultricies justo at consequat. Vestibulum hendrerit, urna non mollis hendrerit, risus nunc pharetra ligula, sodales rhoncus mi odio vitae neque. Phasellus varius, turpis vitae venenatis condimentum, ipsum sem vehicula orci, sed feugiat arcu ligula et velit. Proin varius feugiat nulla vel sodales. Pellentesque sed sollicitudin arcu. Nulla lobortis, ligula id pulvinar suscipit, sem sapien feugiat erat, vitae dignissim magna neque quis neque. Curabitur dictum neque tellus, sit amet viverra nulla porttitor at. Suspendisse ex nulla, rutrum a consectetur sit amet, pulvinar vel felis.</p>
 
-          <p>Nullam sem sapien, accumsan vel justo non, pharetra vehicula enim. Nullam quis justo non velit ultrices tincidunt sed vel neque. Vestibulum eleifend cursus suscipit. Proin pretium euismod ante, a egestas quam ornare interdum. Pellentesque eleifend purus eu rutrum laoreet. Nunc a cursus diam. Aenean ante est, sollicitudin at neque eget, luctus faucibus mi. Fusce molestie sed orci eu luctus. Sed elementum mauris non lorem congue, eu pretium nisi lacinia. Integer mollis fermentum leo. Integer efficitur tristique metus porta auctor. Praesent vel augue porttitor, accumsan mi nec, rhoncus urna. Sed sagittis sem orci, ut egestas tortor ultricies facilisis. In efficitur finibus massa, ac tristique nunc dignissim vitae. Donec imperdiet nunc vestibulum eros tristique finibus.</p>
+          <h2 id="executive-summary">Executive Summary</h2>
+          <p>Four University of North Carolina at Chapel Hill students from the Usability and UX Design course led by Associate Professor Laura Ruel designed and conducted a usability test on ncpressfoundation.org. The purpose of this test is to identify common usability issues and provide suggestions for improving user engagement on the website.</p>
 
-          <p>Donec ut gravida leo, a ultricies magna. Vivamus condimentum leo vel sem semper, sed tincidunt nibh molestie. Morbi imperdiet malesuada ex vestibulum placerat. Donec blandit sit amet orci sed sodales. Fusce maximus tempus neque sed ultricies. Fusce laoreet euismod nisl in scelerisque. Duis suscipit dui et ipsum blandit eleifend.</p>
+          <p>The test was composed of a pre-test survey, free observation period, task assignment, and a post-test survey. In total, nine test sessions were conducted.</p>
 
-          <p>Suspendisse pretium leo lorem, eget faucibus enim egestas ut. Donec dapibus lorem vitae dapibus aliquet. Maecenas odio urna, tincidunt quis nibh in, tristique imperdiet felis. Vivamus nibh lectus, vehicula ac ultrices at, bibendum a sapien. Etiam in malesuada sapien. Vestibulum et orci quam. Maecenas quis sem in eros consectetur rhoncus. Ut commodo purus vel felis tempus ultricies. Integer gravida mi nisi, et cursus leo suscipit vel.</p>
 
-          <h1 id="next">Next</h1>
+          <hr>
 
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ullamcorper porta congue. Sed malesuada rutrum pellentesque. Duis laoreet ultricies justo at consequat. Vestibulum hendrerit, urna non mollis hendrerit, risus nunc pharetra ligula, sodales rhoncus mi odio vitae neque. Phasellus varius, turpis vitae venenatis condimentum, ipsum sem vehicula orci, sed feugiat arcu ligula et velit. Proin varius feugiat nulla vel sodales. Pellentesque sed sollicitudin arcu. Nulla lobortis, ligula id pulvinar suscipit, sem sapien feugiat erat, vitae dignissim magna neque quis neque. Curabitur dictum neque tellus, sit amet viverra nulla porttitor at. Suspendisse ex nulla, rutrum a consectetur sit amet, pulvinar vel felis.</p>
 
-          <p>Nullam sem sapien, accumsan vel justo non, pharetra vehicula enim. Nullam quis justo non velit ultrices tincidunt sed vel neque. Vestibulum eleifend cursus suscipit. Proin pretium euismod ante, a egestas quam ornare interdum. Pellentesque eleifend purus eu rutrum laoreet. Nunc a cursus diam. Aenean ante est, sollicitudin at neque eget, luctus faucibus mi. Fusce molestie sed orci eu luctus. Sed elementum mauris non lorem congue, eu pretium nisi lacinia. Integer mollis fermentum leo. Integer efficitur tristique metus porta auctor. Praesent vel augue porttitor, accumsan mi nec, rhoncus urna. Sed sagittis sem orci, ut egestas tortor ultricies facilisis. In efficitur finibus massa, ac tristique nunc dignissim vitae. Donec imperdiet nunc vestibulum eros tristique finibus.</p>
+          <p>This report discusses these issues in detail and provides suggestions for how to improve user engagement on <a href="http://ncpressfoundation.org/">ncpressfoundation.org</a>.</p>
 
-          <p>Donec ut gravida leo, a ultricies magna. Vivamus condimentum leo vel sem semper, sed tincidunt nibh molestie. Morbi imperdiet malesuada ex vestibulum placerat. Donec blandit sit amet orci sed sodales. Fusce maximus tempus neque sed ultricies. Fusce laoreet euismod nisl in scelerisque. Duis suscipit dui et ipsum blandit eleifend.</p>
+          <h2 id="methodology">Methodology</h2>
 
-          <p>Suspendisse pretium leo lorem, eget faucibus enim egestas ut. Donec dapibus lorem vitae dapibus aliquet. Maecenas odio urna, tincidunt quis nibh in, tristique imperdiet felis. Vivamus nibh lectus, vehicula ac ultrices at, bibendum a sapien. Etiam in malesuada sapien. Vestibulum et orci quam. Maecenas quis sem in eros consectetur rhoncus. Ut commodo purus vel felis tempus ultricies. Integer gravida mi nisi, et cursus leo suscipit vel.</p>
+            <h2 id="purpose">Purpose</h2>
+            <p>This study was designed to test the website of the North Carolina Press Foundation, ncpressfoundation.org, for user engagement and usability. Tasks were developed to focus on navigating the website and information searching.</p>
+
+
+            <h2 id="method">Method</h2>
+            <p>A research team of four Usability and UX Design students at the University of North Carolina at Chapel Hill conducted a usability test to assess how users interact with ncpressfoundation.org. The study was designed based off research by Jakob Nielsen, Laura Ruel, and Steven Krug.</p>
+
+
+            <p>Tests were administered between October 24 and October 28, 2016. Individual tests were conducted on campus or in participant’s homes, using a Mac-based computer and either a Firefox, Google Chrome, or Safari web browser. Participants were asked to complete a series of tasks Each session lasted approximately 30-45 minutes.</p>
+
+
+          <p>The study consisted of four main parts: a pre-test survey, free observation, assigned tasks, and a post-test survey. These components are further explained below and copies of the test documents can be found in the Appendix.</p>
+
+
+          <ol>
+            <li><span class="bold">Consent Form:</span> Before beginning the test, each participant was distributed a consent form that outlined the purpose, procedures, and confidentiality of the test.</li>
+            <li><span class="bold">Pre-Test Survey:</span> The pre-test survey collected basic demographic information about the participant as well as internet usage habits, engagement with newspapers, and experience with NCPF.</li>
+            <li><span class="bold">Free Observation:</span> During the free observation period, the participant was asked to explore and become comfortable with ncpressfoundation.org for five minutes. The test administrator observed and recorded the user’s behavior, including the following activities:<li>
+
+              <ul>
+                <li>Time until first click</li>
+                <li>Location of first and successive clicks</li>
+                <li>Time spent on each different page</li>
+                <li>Reactions to each page</li>
+                <li>Any possible distractions or moments when the user navigated away from the website</li>
+              </ul>
+
+            <li><span class="bold">Assigned Tasks:</span> Users were given six tasks to complete using ncpressfoundation.org in order to assess the website’s ease of use, information architecture, and engagement. Each task directed participants to search for specific content by navigating the website without using the search function.</li>
+            <li><span class="bold">Post-Test Survey:</span> The post-test survey asked participants to rate the website based on navigability, content, engagement, and general impressions. Users were also asked to elaborate on their ratings and describe the best and worst features they noticed during the test.</li>
+        </ol>
+
+        <h2 id="participant-profiles">Participant Profiles</h2>
+
+
+        <p>We had seven participants between the ages of 21 and 35. All but one of them were female. All of our participants were either White or Asian/Pacific Islander and were enrolled in or had graduated from college. We had one participant who is a teacher. 7 out of 8 of them reported spending 4 to 9 hours on the Internet daily, and that time is mostly spent on a desktop computer or laptop. Four of our participants never read newspapers, two of them read newspapers daily, and one of them reads newspapers once a month. Those who do read news are almost evenly split as to whether they prefer print or online news: 3 to 2 for print news.  None of our participants had accessed NCPF before this study.</p> 
+
+        <h2 id="limitations">Limitations</h2>
+
+
+        <p>In this study, there were a few limitations that may have influenced the results. First, the sample size of the participants chosen for the usability tests is small and with mostly similar demographics. Although 80 percent of issues can be discovered with testing five people, according to Jakob Nielson, this still leaves 20 percent of problems undiscovered. In order to better account for this gap of knowledge, it would be best to conduct multiple rounds of tests with a more diverse set of participants. In addition, the participants may have been biased in their commentary by providing softer critiques to please the observer. Lastly, while the same script and methodology is used in each session, each tester conducted their tests separately from the rest of the group, so any differences in the procedures or testing styles of each tester is unaccounted for and may have influenced the results.</p>
+
+
 
 
         </div>
